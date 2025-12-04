@@ -22,18 +22,7 @@
       <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../深流/NewLight/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/谜姬.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mystoriAudio.html" beforeDir="false" afterPath="$PROJECT_DIR$/mystoriAudio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mystoriAudio.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
