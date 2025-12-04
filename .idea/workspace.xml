@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2f7f427-e8e2-4c97-83fa-7bcc7f76f9c8" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/pipeline/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/pipeline/dataset_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/pipeline/dino_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/pipeline/industrial_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/pipeline/infer_yolo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/pipeline/train_yolo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/test/test_env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/utils/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/Lightly/utils/font_fix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/LightlyIndustrial/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/LightlyIndustrial/verify_tensorrt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/NewLight/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../深流/NewLight/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/谜姬.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mystoriAudio.html" beforeDir="false" afterPath="$PROJECT_DIR$/mystoriAudio.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;2513238602&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/2513238602/mystori-official-website.git&quot;,
+    &quot;accountId&quot;: &quot;907a723b-25cf-4c22-b412-8b5e227e29b6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36KFMoKZpXvTuATWypwz5BnpjYu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/公司/谜姬&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e2f7f427-e8e2-4c97-83fa-7bcc7f76f9c8" name="更改" comment="" />
+      <created>1764747310995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764747310995</updated>
+    </task>
+    <servers />
+  </component>
+</project>
