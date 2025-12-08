@@ -16,6 +16,8 @@
 
     <style>
         :root {
+            --bg-top: #000000;      /* 顶部默认纯黑 */
+            --bg-bottom: #ffffff;   /* 底部默认纯白 */
             --bg-main: #f9fafb;
             --accent: #8b5cf6;
             --accent-soft: rgba(139, 92, 246, 0.12);
@@ -39,24 +41,54 @@
             padding: 0;
         }
 
+.bg-control-panel {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 1200;
+    padding: 0.75rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.88);
+    color: #f9fafb;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    backdrop-filter: blur(10px);
+}
+
+.bg-control-panel label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.bg-control-panel input[type="color"] {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
         /* === 全局背景 & 给固定导航让出空间 ===================== */
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background:
-                radial-gradient(circle at 0 0, rgba(234, 179, 8, 0.18), transparent 55%),
-                radial-gradient(circle at 100% 0, rgba(217, 119, 6, 0.18), transparent 55%),
-                linear-gradient(
-                    to bottom,
-                    #050509 0%,
-                    #111827 20%,
-                    #1f2933 35%,
-                    #f2e7cf 70%,
-                    #ffffff 100%
-                );
-            color: var(--text-main);
-            padding-top: var(--nav-height);  /* 重点：给固定导航空出高度 */
-        }
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    /* 这里就是背景颜色的核心 */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-top) 0%,
+        var(--bg-bottom) 100%
+    );
+
+    color: var(--text-main);
+    padding-top: var(--nav-height);
+}
+
 
         body.no-scroll {
             overflow: hidden;
