@@ -44,9 +44,16 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
             "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background:
-                radial-gradient(circle at 0 0, rgba(139, 92, 246, 0.14), transparent 58%),
-                radial-gradient(circle at 100% 0, rgba(139, 92, 246, 0.06), transparent 60%),
-                var(--bg-main);
+                radial-gradient(circle at 0 0, rgba(234, 179, 8, 0.18), transparent 55%),
+                radial-gradient(circle at 100% 0, rgba(217, 119, 6, 0.18), transparent 55%),
+                linear-gradient(
+                    to bottom,
+                    #050509 0%,
+                    #111827 20%,
+                    #1f2933 35%,
+                    #f2e7cf 70%,
+                    #ffffff 100%
+                );
             color: var(--text-main);
             padding-top: var(--nav-height);  /* 重点：给固定导航空出高度 */
         }
@@ -289,312 +296,371 @@
         }
 
 
-                /* SECTIONS -------------------------------------------------------- */
+        /* SECTIONS -------------------------------------------------------- */
 
-                main {
-                    /* main itself不做滚动容器，由 JS 控制整屏滚动 */
-                }
+        main {
+            /* main itself不做滚动容器，由 JS 控制整屏滚动 */
+        }
 
-                section {
-                    scroll-margin-top: calc(var(--nav-height) + 12px);
-                }
+        section {
+            scroll-margin-top: calc(var(--nav-height) + 12px);
+        }
 
-                .screen-section {
-                    min-height: calc(100vh - var(--nav-height));
-                    display: flex;
-                    align-items: center;
-                    padding: 3rem 0;
-                    border-bottom: 1px solid rgba(148, 163, 184, 0.16);
-                }
+        .screen-section {
+            min-height: calc(100vh - var(--nav-height));
+            display: flex;
+            align-items: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+        }
 
-                @media (max-width: 768px) {
-                    .screen-section {
-                        padding: 2.4rem 0 3rem;
-                    }
-                }
+        @media (max-width: 768px) {
+            .screen-section {
+                padding: 2.4rem 0 3rem;
+            }
+        }
 
-                .section-inner {
-                    width: 100%;
-                }
+        .section-inner {
+            width: 100%;
+        }
 
-                .section-label {
-                    font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                    font-size: 0.75rem;
-                    letter-spacing: 0.23em;
-                    text-transform: uppercase;
-                    color: var(--text-muted);
-                    margin-bottom: 1rem;
-                }
+        .section-label {
+            font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.23em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
 
-                .section-title {
-                    font-size: 2.2rem;
-                    letter-spacing: 0.04em;
-                    text-transform: uppercase;
-                    margin: 0 0 0.8rem;
-                    color: var(--text-main);
-                }
+        .section-title {
+            font-size: 2.2rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin: 0 0 0.8rem;
+            color: var(--text-main);
+        }
 
-                @media (min-width: 900px) {
-                    .section-title {
-                        font-size: 2.6rem;
-                    }
-                }
+        @media (min-width: 900px) {
+            .section-title {
+                font-size: 2.6rem;
+            }
+        }
 
-                .section-text {
-                    max-width: 560px;
-                    font-size: 0.98rem;
-                    line-height: 1.8;
-                    color: var(--text-muted);
-                }
+        .section-text {
+            max-width: 560px;
+            font-size: 0.98rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
 
-                /* HERO ------------------------------------------------------------ */
+        /* HERO ------------------------------------------------------------ */
 
-                .hero-grid {
-                    display: grid;
-                    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-                    gap: 2.3rem;
-                    align-items: center;
-                }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 2.3rem;
+            align-items: center;
+        }
 
-                @media (max-width: 900px) {
-                    .hero-grid {
-                        grid-template-columns: minmax(0, 1fr);
-                        gap: 2rem;
-                    }
-                }
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 2rem;
+            }
+        }
 
-                .hero-title {
-                    font-size: 2.8rem;
-                    letter-spacing: 0.08em;
-                    text-transform: uppercase;
-                    margin: 0 0 1rem;
-                    color: var(--text-main);
-                }
+        .hero-title {
+            font-size: 2.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: 0 0 1rem;
+            color: var(--text-main);
+        }
 
-                @media (max-width: 768px) {
-                    .hero-title {
-                        font-size: 2.1rem;
-                    }
-                }
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.1rem;
+            }
+        }
 
-                .hero-subtitle {
-                    font-size: 1rem;
-                    line-height: 1.8;
-                    color: var(--text-muted);
-                    max-width: 540px;
-                }
+        .hero-subtitle {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            max-width: 540px;
+        }
 
-                .hero-actions {
-                    margin-top: 1.6rem;
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 0.9rem;
-                }
+        /* 让首页文字在深色背景上更清晰 */
+        #home .hero-title,
+        #home .hero-subtitle {
+            color: #f9fafb;
+        }
 
-                .btn-primary {
-                    border-radius: 999px;
-                    border: 1px solid transparent;
-                    padding: 0.6rem 1.4rem;
-                    background: var(--accent);
-                    color: #ffffff;
-                    font-size: 0.85rem;
-                    letter-spacing: 0.18em;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                }
+        .hero-actions {
+            margin-top: 1.6rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+        }
 
-                .btn-ghost {
-                    border-radius: 999px;
-                    border: 1px solid var(--border-soft);
-                    padding: 0.6rem 1.3rem;
-                    background: #ffffff;
-                    color: var(--text-main);
-                    font-size: 0.85rem;
-                    letter-spacing: 0.18em;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                }
+        .btn-primary {
+            border-radius: 999px;
+            border: 1px solid transparent;
+            padding: 0.6rem 1.4rem;
+            background: var(--accent);
+            color: #ffffff;
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
 
-                .hero-image {
-                    position: relative;
-                    border-radius: 20px;
-                    overflow: hidden;
-                    border: 1px solid rgba(148, 163, 184, 0.45);
-                    box-shadow: 0 22px 50px rgba(148, 163, 184, 0.45);
-                    background: #020617;
-                }
+        .btn-ghost {
+            border-radius: 999px;
+            border: 1px solid var(--border-soft);
+            padding: 0.6rem 1.3rem;
+            background: #ffffff;
+            color: var(--text-main);
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
 
-                .hero-image img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+        .hero-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, 0.45);
+            box-shadow: 0 22px 50px rgba(148, 163, 184, 0.45);
+            background: #020617;
+        }
 
-                .hero-image-badge {
-                    position: absolute;
-                    left: 1.5rem;
-                    bottom: 1.4rem;
-                    background: rgba(255, 255, 255, 0.88);
-                    padding: 0.55rem 0.9rem;
-                    border-radius: 999px;
-                    border: 1px solid rgba(148, 163, 184, 0.55);
-                    font-size: 0.75rem;
-                    letter-spacing: 0.18em;
-                    text-transform: uppercase;
-                    color: #4b5563;
-                }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-                /* PRODUCT --------------------------------------------------------- */
+        /* PRODUCT --------------------------------------------------------- */
 
-                .product-grid {
-                    display: grid;
-                    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-                    gap: 2.6rem;
-                    align-items: center;
-                }
+        .product-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 2.6rem;
+            align-items: center;
+        }
 
-                @media (max-width: 900px) {
-                    .product-grid {
-                        grid-template-columns: minmax(0, 1fr);
-                        gap: 2rem;
-                    }
-                }
+        @media (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 2rem;
+            }
+        }
 
-                .product-image {
-                    border-radius: 20px;
-                    overflow: hidden;
-                    border: 1px solid rgba(148, 163, 184, 0.45);
-                    box-shadow: 0 20px 45px rgba(148, 163, 184, 0.45);
-                    background: #020617;
-                }
+        .product-image {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, 0.45);
+            box-shadow: 0 20px 45px rgba(148, 163, 184, 0.45);
+            background: #020617;
+        }
 
-                .product-specs {
-                    margin-top: 1.2rem;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                    gap: 0.8rem 2.5rem;
-                    font-size: 0.86rem;
-                    color: var(--text-muted);
-                }
+        .product-specs {
+            margin-top: 1.2rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.8rem 2.5rem;
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
 
-                .product-spec-label {
-                    font-size: 0.78rem;
-                    letter-spacing: 0.2em;
-                    text-transform: uppercase;
-                    color: #4b5563;
-                    margin-bottom: 0.35rem;
-                }
+        .product-spec-label {
+            font-size: 0.78rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #4b5563;
+            margin-bottom: 0.35rem;
+        }
 
-                .product-price-line {
-                    margin-top: 1.4rem;
-                    font-size: 0.9rem;
-                    letter-spacing: 0.24em;
-                    text-transform: uppercase;
-                    color: var(--accent-strong);
-                }
+        .product-price-line {
+            margin-top: 1.4rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--accent-strong);
+        }
 
-                /* ABOUT ----------------------------------------------------------- */
+        /* ABOUT ----------------------------------------------------------- */
 
-                .about-grid {
-                    display: grid;
-                    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-                    gap: 2.6rem;
-                    align-items: center;
-                }
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 2.6rem;
+            align-items: center;
+        }
 
-                @media (max-width: 900px) {
-                    .about-grid {
-                        grid-template-columns: minmax(0, 1fr);
-                        gap: 2rem;
-                    }
-                }
+        @media (max-width: 900px) {
+            .about-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 2rem;
+            }
+        }
 
-                .about-image {
-                    border-radius: 20px;
-                    overflow: hidden;
-                    border: 1px solid rgba(148, 163, 184, 0.45);
-                    box-shadow: 0 22px 50px rgba(148, 163, 184, 0.45);
-                    background: #020617;
-                }
+        .about-image {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, 0.45);
+            box-shadow: 0 22px 50px rgba(148, 163, 184, 0.45);
+            background: #020617;
+        }
 
-                .about-list {
-                    margin-top: 1.2rem;
-                    padding: 0;
-                    list-style: none;
-                    font-size: 0.9rem;
-                    color: var(--text-muted);
-                }
+        .about-list {
+            margin-top: 1.2rem;
+            padding: 0;
+            list-style: none;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
 
-                .about-list li + li {
-                    margin-top: 0.4rem;
-                }
+        .about-list li + li {
+            margin-top: 0.4rem;
+        }
 
-                /* CONTACT --------------------------------------------------------- */
+        /* CONTACT --------------------------------------------------------- */
 
-                .contact-grid {
-                    display: grid;
-                    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-                    gap: 2.4rem;
-                    align-items: center;
-                }
+        #contact {
+            background: #ffffff;
+        }
 
-                @media (max-width: 900px) {
-                    .contact-grid {
-                        grid-template-columns: minmax(0, 1fr);
-                        gap: 2rem;
-                    }
-                }
+        .contact-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
 
-                .contact-block {
-                    font-size: 0.96rem;
-                    line-height: 1.8;
-                    color: var(--text-muted);
-                }
+        .contact-top {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2.4rem;
+            align-items: flex-start;
+        }
 
-                .contact-list {
-                    list-style: none;
-                    padding: 0;
-                    margin: 1.2rem 0 0;
-                    font-size: 0.9rem;
-                }
+        @media (max-width: 900px) {
+            .contact-top {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
 
-                .contact-list li + li {
-                    margin-top: 0.45rem;
-                }
+        .contact-column {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
 
-                .contact-label {
-                    text-transform: uppercase;
-                    letter-spacing: 0.18em;
-                    font-size: 0.76rem;
-                    color: #4b5563;
-                }
+        .contact-heading {
+            font-size: 0.78rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #4b5563;
+            margin-bottom: 0.75rem;
+        }
 
-                .contact-value {
-                    display: block;
-                }
+        .contact-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.9rem;
+        }
 
-                .contact-note {
-                    margin-top: 1.2rem;
-                    font-size: 0.84rem;
-                    color: var(--text-muted);
-                }
+        .contact-links a {
+            text-decoration: none;
+            color: var(--text-main);
+        }
 
-                .contact-panel {
-                    border-radius: 20px;
-                    border: 1px solid var(--border-soft);
-                    padding: 1.4rem 1.6rem;
-                    background:
-                        radial-gradient(circle at 0 0, rgba(139, 92, 246, 0.12), transparent 55%),
-                        #ffffff;
-                    box-shadow: 0 18px 40px rgba(148, 163, 184, 0.35);
-                }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
 
-                footer {
-                    padding: 1.6rem 0 2.2rem;
-                    font-size: 0.78rem;
-                    color: var(--text-muted);
-                    text-align: center;
-                }
+        .contact-label-inline {
+            font-size: 0.76rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #9ca3af;
+            display: block;
+            margin-bottom: 0.05rem;
+        }
+
+        .contact-column-cta .contact-cta-text {
+            margin: 0 0 0.9rem;
+            line-height: 1.8;
+        }
+
+        .contact-cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.55rem 1.6rem;
+            border-radius: 999px;
+            border: 1px solid #d1b06b;
+            background: linear-gradient(90deg, #facc15 0%, #fbbf24 40%, #fde68a 100%);
+            color: #111827;
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .contact-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.4rem;
+            padding-top: 1.4rem;
+            border-top: 1px solid var(--border-soft);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .contact-social {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .contact-social-links {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.8rem;
+        }
+
+        .contact-social-links a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-main);
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+        }
+
+        .contact-social-links a:hover {
+            border-color: var(--border-soft);
+        }
+
+        footer {
+            padding: 1.6rem 0 2.2rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -617,10 +683,6 @@
                 <a href="#product">Product</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-<!--                <button class="nav-cta"-->
-<!--                        onclick="document.getElementById('product').scrollIntoView({behavior:'smooth'});">-->
-<!--                    View product-->
-<!--                </button>-->
             </nav>
 
             <button class="nav-toggle" id="nav-toggle"
@@ -643,7 +705,7 @@
         <div class="container section-inner">
             <div class="hero-grid">
                 <div>
-                    <div class="section-label">Independent hi-fi brand · OEM / ODM available</div>
+                    <!-- 删除顶部小标签，保留主标题和说明文字 -->
                     <h1 class="hero-title">Sound, carved in detail.</h1>
                     <p class="hero-subtitle">
                         Mystori Audio designs high-performance in-ear monitors for listeners who
@@ -666,9 +728,7 @@
                 <div class="hero-image">
                     <!-- Opening hero image -->
                     <img src="source/m1.png" alt="Mystori flagship in-ear monitor on dark background">
-                    <div class="hero-image-badge">
-                        Mystori · Flagship In-Ear Monitor
-                    </div>
+                    <!-- 删除图片下方的白色徽标条 -->
                 </div>
             </div>
         </div>
@@ -679,7 +739,7 @@
         <div class="container section-inner">
             <div class="product-grid">
                 <div>
-                    <div class="section-label">Flagship product</div>
+                    <div class="section-label">Signature product</div>
                     <h2 class="section-title">DEFINE · Vocal Edition</h2>
                     <p class="section-text">
                         The Mystori DEFINE · Vocal Edition is tuned for a natural, intimate vocal
@@ -695,15 +755,11 @@
                     <div class="product-specs">
                         <div>
                             <div class="product-spec-label">Configuration</div>
-                            <div>Hybrid 1DD + 1BA crossover, custom acoustic path</div>
+                            <div>Hybrid 1DD + 1BA configuration, custom acoustic path.</div>
                         </div>
                         <div>
                             <div class="product-spec-label">Impedance</div>
-                            <div>Impedance / sensitivity tuned for portable players and dongles</div>
-                        </div>
-                        <div>
-                            <div class="product-spec-label">Target</div>
-                            <div>Balanced signature with vocal focus, controlled low-end</div>
+                            <div>Impedance and sensitivity optimised for portable players and dongles.</div>
                         </div>
                     </div>
                 </div>
@@ -749,53 +805,61 @@
     <!-- CONTACT --------------------------------------------------------->
     <section id="contact" class="screen-section">
         <div class="container section-inner">
-            <div class="contact-grid">
-                <div class="contact-block">
-                    <div class="section-label">Contact & cooperation</div>
-                    <h2 class="section-title">Work with Mystori.</h2>
-                    <p class="section-text">
-                        For distribution, OEM / ODM projects, media reviews or after-sales
-                        support, please contact us via e-mail. Include your region, company
-                        name and a short description of your needs so that we can respond
-                        efficiently.
-                    </p>
+            <div class="contact-layout">
+                <div class="contact-top">
+                    <div class="contact-column">
+                        <div class="contact-heading">Learn more</div>
+                        <ul class="contact-links">
+                            <li><a href="#about">About Mystori</a></li>
+                            <li><a href="#product">DEFINE · Vocal Edition</a></li>
+                            <li><a href="#home">Sound philosophy</a></li>
+                        </ul>
+                    </div>
 
-                    <ul class="contact-list">
-                        <li>
-                            <span class="contact-label">E-mail</span>
-                            <span class="contact-value">contact@mystori-audio.com</span>
-                        </li>
-                        <li>
-                            <span class="contact-label">Location</span>
-                            <span class="contact-value">
-                                China · manufacturing partners mainly in Shenzhen / Guangdong
-                            </span>
-                        </li>
-                        <li>
-                            <span class="contact-label">Support</span>
-                            <span class="contact-value">
-                                For after-sales enquiries, please provide your order information
-                                and purchase channel.
-                            </span>
-                        </li>
-                    </ul>
+                    <div class="contact-column">
+                        <div class="contact-heading">Support</div>
+                        <ul class="contact-links">
+                            <li>
+                                <span class="contact-label-inline">E-mail</span>
+                                <a href="mailto:contact@mystori-audio.com">contact@mystori-audio.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-label-inline">After-sales</span>
+                                <span>Include your order number and purchase channel in the message.</span>
+                            </li>
+                            <li>
+                                <span class="contact-label-inline">Region</span>
+                                <span>China · manufacturing partners mainly in Shenzhen / Guangdong.</span>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <div class="contact-note">
-                        Official social media channels (WeChat, Weibo, Instagram, Bilibili) will
-                        be announced through packaging and official statements to ensure that
-                        you are following the correct accounts.
+                    <div class="contact-column contact-column-cta">
+                        <div class="contact-heading">Partners & OEM / ODM</div>
+                        <p class="contact-cta-text">
+                            We welcome long-term cooperation with distributors, studios and brands
+                            who share a similar view on sound and product quality. Tell us briefly
+                            about your project and timeline, and we will respond with more details.
+                        </p>
+                        <a class="contact-cta-button" href="mailto:contact@mystori-audio.com">
+                            Contact Mystori team
+                        </a>
                     </div>
                 </div>
 
-                <div class="contact-panel">
-                    <div class="section-label">For partners</div>
-                    <p style="margin:0; font-size:0.9rem; line-height:1.8; color:var(--text-muted);">
-                        We welcome long-term cooperation with distributors, studios and brands
-                        who share a similar view on sound and product quality. If you are
-                        looking for a dedicated acoustic design partner, Mystori can provide
-                        concept development, tuning, industrial design input and packaging
-                        direction under one coherent vision.
-                    </p>
+                <div class="contact-bottom">
+                    <div class="contact-origin">
+                        Designed in China · Manufactured with partners in Shenzhen / Guangdong
+                    </div>
+                    <div class="contact-social">
+                        <span class="contact-heading">Follow</span>
+                        <div class="contact-social-links">
+                            <a href="#" aria-label="WeChat">WeChat</a>
+                            <a href="#" aria-label="Weibo">Weibo</a>
+                            <a href="#" aria-label="Bilibili">Bilibili</a>
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
